@@ -12,3 +12,13 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 
 include_directories(include)
+
+
+# GoogleTest
+
+include(CTest)
+if(BUILD_TESTING)
+    message(STATUS "Testing enabled")
+    add_subdirectory(test)
+endif()
+
